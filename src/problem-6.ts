@@ -6,9 +6,12 @@
     age: number;
     email: string;
   }
-  const updateProfile = <X extends Profile, Y>(param1: X, param2: Y) => {
+  const updateProfile = <X extends Profile, Y extends Partial<Profile>>(
+    param1: X,
+    param2: Y
+  ) => {
     return { ...param1, ...param2 };
   };
   const myProfile = { name: "Alice", age: 25, email: "alice@example.com" };
-  console.log(updateProfile(myProfile, { age: 26 }));
+  console.log(updateProfile(myProfile, { name: "Alice" }));
 }
