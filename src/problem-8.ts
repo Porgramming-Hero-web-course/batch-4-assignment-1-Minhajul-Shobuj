@@ -6,9 +6,9 @@
     if (valid) {
       return true;
     } else {
-      return false;
+      false;
     }
   };
   const person = { name: "Alice", age: 25, email: "alice@example.com" };
-  console.log(validateKeys(person, ["name", "age"]));
+  console.log(validateKeys(person, ["name", "age", "email", "name"]));
 }
