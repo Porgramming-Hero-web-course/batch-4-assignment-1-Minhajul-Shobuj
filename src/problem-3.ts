@@ -3,9 +3,12 @@
 
   const countWordOccurrences = (param1: string, param2: string) => {
     let count = 0;
-    for (let i = 0; i < param1.length; i++) {
-      console.log(i);
+    let checking = 0;
+    while (param1.includes(param2, checking)) {
+      count++;
+      checking = param1.indexOf(param2, checking) + 1;
     }
+    console.log(count);
   };
-  countWordOccurrences("TypeScript is great. I love TypeScript!", "typescript");
+  countWordOccurrences("I love typescript", "typescript");
 }
