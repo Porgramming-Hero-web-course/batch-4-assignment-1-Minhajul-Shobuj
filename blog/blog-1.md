@@ -26,6 +26,6 @@ skills: string[];
 expertise: "Server Side";
 };
 type FullStackDeveloper = FrontEndDeveloper & BackEndDeveloper;
-In the FullStackDeveloper type we need to full fill all the property of FrontEndDeveloper and BackendDeveloper. Because we adjust both on FullStackDeveloper using intersection. In a word intersection combained two or more type in one.
+In the FullStackDeveloper type we need to full fill all the property of FrontEndDeveloper and BackendDeveloper. Because we adjust both on FullStackDeveloper using intersection. In a word intersection combained two or more type in one. Same way we can use it for others.
 
 At last both union and intersection make type flexible. Union create option and on the other hand itersection make compulsory. But both make our code shorter, smarter and cleaner as well.
