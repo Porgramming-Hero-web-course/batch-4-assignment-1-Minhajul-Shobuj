@@ -1,5 +1,8 @@
 {
-  //Problem-7: Create a TypeScript class Car with properties make, model, and year. Include a method getCarAge that returns the car's age based on the current year.
+  //---------------------------------(Problem-7)------------------------------
+  //Create a TypeScript class Car with properties make, model, and year. Include a method getCarAge that returns the car's age based on the current year.
+
+  //___________________________________(Solve)_________________________________
 
   class Car {
     make: string;
@@ -17,6 +20,6 @@
     }
   }
 
-  const car = new Car("Honda", "Civic", 2010);
+  const car = new Car("Honda", "Civic", 2018);
   car.getCarAge();
 }
